@@ -8,6 +8,7 @@
     1. HTML file should include an H1 title and a button “get pokemon”.
 1. When you click the button, your index.js (sent with index.html) should send a fetch request to route “/get_pokemon_data” which should send the following data:
 
+    ```
     const pokemon = [
 
         {name: "bulbasaur", img: "http://img.pokemondb.net/artwork/bulbasaur", age: 3},
@@ -25,6 +26,7 @@
         {name: "wartortle", img: "http://img.pokemondb.net/artwork/wartortle", age: 6}
 
     ];
+    ```
 
 When you get the data, display JUST the names in in a list.
 
