@@ -36,7 +36,3 @@ When you get the data, display JUST the names in in a list.
     + _Hint_: You will need to programmatically add `.jpg` to the end of the `img` strings.
 - Add ability to toggle showing/hiding pokemon.
 - Style the page.
-
-### Attributions
-
-- Background image is from: [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Pok%C3%A9_Balls#/media/File:Pokebola-pokeball-png-0.png).
