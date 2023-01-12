@@ -5,7 +5,7 @@ togglePokeListBtn.addEventListener("click", async () => {
   let res = await fetch(route);
   let pokemon = await res.json();
   let pokemonNames = pokemon.map((el) => `${el.name}: Choose!`);
-  let body = document.querySelector("body");
+  let container = document.querySelector(".container");
   if (togglePokeListBtn.innerText.toLowerCase().includes("show")) {
     togglePokeListBtn.innerText = `Hide Pokemon List`;
     for (let i = 0; i < pokemonNames.length; i++) {
@@ -13,7 +13,7 @@ togglePokeListBtn.addEventListener("click", async () => {
       para.id = `pokemon${i}`;
       para.className = "showImgAge";
       para.textContent = `${pokemonNames[i]}`;
-      body.appendChild(para);
+      container.appendChild(para);
     }
     const pokemonElements = document.getElementsByClassName("showImgAge");
     const pokemonElementsArray = [...pokemonElements];
@@ -35,7 +35,7 @@ togglePokeListBtn.addEventListener("click", async () => {
     togglePokeListBtn.innerText = `Show Pokemon List`;
     for (let i = 0; i < pokemonNames.length; i++) {
       let remove = document.getElementById(`pokemon${i}`);
-      body.removeChild(remove);
+      container.removeChild(remove);
     }
   }
 });

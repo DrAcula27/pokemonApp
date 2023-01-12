@@ -30,6 +30,12 @@
 
 When you get the data, display JUST the names in in a list.
 
-**BONUS**
+### BONUS
+
 - When a name is clicked, also display the image and age of the clicked pokemon.
     + _Hint_: You will need to programmatically add `.jpg` to the end of the `img` strings.
+- Add ability to toggle showing/hiding pokemon.
+
+### Attributions
+
+- Background image is from: [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Pok%C3%A9_Balls#/media/File:Pokebola-pokeball-png-0.png).
