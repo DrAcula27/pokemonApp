@@ -9,8 +9,20 @@ showPokemonBtn.addEventListener("click", async () => {
   let body = document.querySelector("body");
   for (let i = 0; i < pokemonNames.length; i++) {
     const para = document.createElement("p");
-    para.id = "my-paragraph";
+    para.id = `pokemon${i}`;
+    para.className = "showImgAge";
     para.textContent = `${pokemonNames[i]}`;
     body.appendChild(para);
   }
+  const pokemonElements = document.getElementsByClassName("showImgAge");
+  const pokemonElementsArray = [...pokemonElements];
+  pokemonElementsArray.forEach((element, i) => {
+    element.addEventListener("click", () => {
+      element.innerHTML += `
+        <br />
+        Age: ${pokemon[i].age}
+        <br />
+        <img src="${pokemon[i].img}.jpg" max-width="250px" />`;
+    });
+  });
 });
