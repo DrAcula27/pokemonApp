@@ -1,0 +1,3 @@
+p[id^="pokemon"]::first-letter {
+    text-transform: capitalize;
+}

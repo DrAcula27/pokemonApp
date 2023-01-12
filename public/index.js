@@ -22,7 +22,7 @@ showPokemonBtn.addEventListener("click", async () => {
         <br />
         Age: ${pokemon[i].age}
         <br />
-        <img src="${pokemon[i].img}.jpg" max-width="250px" />`;
+        <img src="${pokemon[i].img}.jpg" />`;
     });
   });
 });
