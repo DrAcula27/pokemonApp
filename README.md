@@ -1,6 +1,6 @@
-# Morning Exercise - First Full-Stack Application
+# Morning Exercise - First _almost_ Full-Stack Application
 
-## Per Scholas - Week 7 - Express - Assignment: pokemonApp
+## Per Scholas - Week 7 - Front-end & Express - Assignment: pokemonApp
 
 ### Minimum Viable Product (MVP)
 
