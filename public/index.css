@@ -1,0 +1,124 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  line-height: 1.25;
+  font-size: 1.25em;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rainbow {
+  font-size: clamp(32px, 4vw, 48px);
+  font-family: monospace;
+  letter-spacing: 5px;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #ffcb05;
+  }
+  25% {
+    color: #3d7dca;
+  }
+  50% {
+    color: #003a70;
+  }
+  75% {
+    color: #3d7dca;
+  }
+  100% {
+    color: #ffcb05;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.button,
+input[type="text"] {
+  margin: 0.4em;
+  padding: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  color: #003a70;
+  border-radius: 1em;
+  border: 2px solid #003a70;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+.button {
+  background: #ffcb05;
+  font-weight: bold;
+}
+
+.shadow-radial {
+  display: inline-block;
+  position: relative;
+}
+
+.shadow-radial:before,
+.shadow-radial:after {
+  pointer-events: none;
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  height: 5px;
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+}
+
+.shadow-radial:before {
+  bottom: 100%;
+  background: radial-gradient(
+    ellipse at 50% 150%,
+    rgba(0, 58, 112, 0.6) 0%,
+    rgba(0, 58, 112, 0) 80%
+  );
+}
+
+.shadow-radial:after {
+  top: 100%;
+  background: radial-gradient(
+    ellipse at 50% -50%,
+    rgba(0, 58, 112, 0.6) 0%,
+    rgba(0, 58, 112, 0) 80%
+  );
+}
+
+.shadow-radial:hover:before,
+.shadow-radial:hover:after {
+  opacity: 1;
+}
+
+button:hover,
+li:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  text-shadow: 0px 0px 2px #ffcb05;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
+img {
+  max-width: 150px;
+}

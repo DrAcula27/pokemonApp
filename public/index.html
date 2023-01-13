@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Your Pokemon!</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="rainbow">Choose Your Pokemon!</h1>
+      <button
+        type="button"
+        id="toggle-poke-list-btn"
+        class="button shadow-radial"
+      >
+        Show Pokemon List
+      </button>
+      <ul class="list"></ul>
+      <div id="delete-container" class="hidden">
+        <input type="text" id="delete-input" placeholder="Enter Pokemon name" />
+        <button id="delete-btn" class="button shadow-radial">DELETE</button>
+      </div>
+    </div>
+  </body>
+</html>
