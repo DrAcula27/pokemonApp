@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
@@ -6,6 +7,9 @@ body {
 }
 
 .main-container {
+=======
+.container {
+>>>>>>> 7dc67912f8696b5ec1016d590f97e21e599217a3
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +40,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 .hidden {
   display: none;
 }
@@ -56,6 +61,17 @@ input[type="text"] {
 
 .button {
   background: #ffcb05;
+=======
+.button {
+  margin: 0.4em;
+  padding: 1em;
+  cursor: pointer;
+  background: #ffcb05;
+  text-decoration: none;
+  color: #003a70;
+  border-radius: 1em;
+  font-size: 1.25em;
+>>>>>>> 7dc67912f8696b5ec1016d590f97e21e599217a3
   font-weight: bold;
 }
 
@@ -103,6 +119,7 @@ input[type="text"] {
 }
 
 button:hover,
+<<<<<<< HEAD
 li:hover {
   cursor: pointer;
 }
@@ -116,6 +133,17 @@ li:hover {
 }
 
 li::first-letter {
+=======
+p:hover {
+  cursor: pointer;
+}
+
+p:hover {
+  text-shadow: 0px 0px 2px #ffcb05;
+}
+
+p[id^="pokemon"]::first-letter {
+>>>>>>> 7dc67912f8696b5ec1016d590f97e21e599217a3
   text-transform: capitalize;
 }
 
